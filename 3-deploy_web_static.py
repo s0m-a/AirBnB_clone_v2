@@ -8,10 +8,10 @@ import os
 
 env.hosts = ['100.26.164.183', '54.237.99.32']
 
-env.user = "soma"
-
+env.user = "ubuntu"
 
 def do_deploy(archive_path):
+    """ depoly """
     if archive_path is None or not os.path.isfile(archive_path):
         print("NOT PATH")
         return False
@@ -34,6 +34,7 @@ def do_deploy(archive_path):
 
 
 def do_pack():
+    """ package func"""
     if not os.path.isdir("./versions"):
         os.makedirs("./versions")
     xtime = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
@@ -43,6 +44,7 @@ def do_pack():
 
 
 def deploy():
+    """package func"""
     map = do_pack()
     if map is None:
         return False

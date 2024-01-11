@@ -9,7 +9,7 @@ from os import path
 
 
 env.hosts = ['100.26.164.183', '54.237.99.32']
-env.user = 'soma'
+env.user = 'ubuntu'
 env.key_filename = '~/.ssh/id_rsa'
 
 

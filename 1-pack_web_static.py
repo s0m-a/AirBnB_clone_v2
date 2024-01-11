@@ -14,6 +14,7 @@ from fabric.api import local
 
 
 def do_pack():
+    """ package function """
 <<<<<<< HEAD
     if not os.path.isdir("./versions"):
         os.makedirs("./versions")
